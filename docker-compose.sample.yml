@@ -171,9 +171,6 @@ services:
       - '8490:8490'
       - '8495:8495'
       - '8496:8496'
-    env_file:
-      - azuracast.env
-      - .env
     volumes:
       - ${AZURACAST_DATA_BASE}/stations:/var/azuracast/stations
       - ${AZURACAST_DATA_BASE}/backups:/var/azuracast/backups
