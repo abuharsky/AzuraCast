@@ -174,7 +174,7 @@ services:
     volumes:
       - ${AZURACAST_DATA_BASE}/stations:/var/azuracast/stations
       - ${AZURACAST_DATA_BASE}/backups:/var/azuracast/backups
-      - db_data:/var/lib/mysql
+      - ${AZURACAST_DATA_BASE}/db_data:/var/lib/mysql
       - ${AZURACAST_DATA_BASE}/www_uploads:/var/azuracast/storage/uploads
       - ${AZURACAST_DATA_BASE}/shoutcast2_install:/var/azuracast/storage/shoutcast2
       - ${AZURACAST_DATA_BASE}/stereo_tool_install:/var/azuracast/storage/stereo_tool
